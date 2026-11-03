@@ -1,0 +1,183 @@
+.movie-card-details {
+	grid-column: span 3;
+	display: grid;
+	grid-template-columns: 233px minmax(0, 1fr);
+	gap: 24px;
+
+	width: 100%;
+	height: 500px;
+	min-height: 0;
+	box-sizing: border-box;
+	padding: 24px;
+	align-items: stretch;
+
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.08);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 32px rgba(20, 10, 40, 0.25);
+
+	&__wrapper-poster {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		justify-items: stretch;
+		align-content: start;
+		gap: 16px;
+
+		width: 100%;
+		min-width: 0;
+	}
+
+	&__poster {
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 2 / 3;
+		object-fit: cover;
+		border-radius: 12px;
+	}
+
+	&__info {
+		display: grid;
+		align-content: start;
+		justify-items: stretch;
+		gap: 18px;
+
+		height: 100%;
+		min-width: 0;
+		min-height: 0;
+		padding: 8px 12px 8px 0;
+
+		color: rgba(255, 255, 255, 0.88);
+		font-family: "Manrope", sans-serif;
+		font-size: 15px;
+		line-height: 1.5;
+
+		overflow-y: auto;
+		overflow-x: hidden;
+		overflow-wrap: anywhere;
+	}
+
+	&__item {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		align-content: start;
+		gap: 4px;
+		min-width: 0;
+	}
+
+	&__label {
+		margin: 0;
+		color: rgba(225, 190, 255, 0.95);
+		font-family: "Manrope", sans-serif;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 1.4;
+		letter-spacing: 0.06em;
+		text-shadow: 0 0 12px rgba(196, 119, 173, 0.12);
+	}
+
+	&__director,
+	&__actors,
+	&__awards,
+	&__country,
+	&__genre {
+		margin: 0;
+		color: rgba(245, 230, 250, 0.9);
+		font-size: 14px;
+		line-height: 1.6;
+	}
+
+	&__ratings {
+		display: grid;
+		gap: 10px;
+		min-width: 0;
+	}
+
+	&__ratings-items {
+		display: grid;
+		gap: 8px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__ratings-item {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		align-items: center;
+		gap: 16px;
+		min-width: 0;
+		padding: 9px 12px;
+
+		background: rgba(35, 18, 43, 0.35);
+		border: 1px solid rgba(196, 119, 173, 0.2);
+		border-radius: 10px;
+	}
+
+	&__rating-source {
+		margin: 0;
+		color: rgba(226, 211, 235, 0.85);
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 1.5;
+	}
+
+	&__rating-value {
+		margin: 0;
+		color: #e5b5dc;
+		font-size: 14px;
+		font-weight: 700;
+		white-space: nowrap;
+	}
+
+	&__btn {
+		display: grid;
+		justify-items: center;
+		align-items: center;
+
+		width: 100%;
+		box-sizing: border-box;
+		margin-top: 4px;
+		padding: 12px 16px;
+
+		background-color: rgba(43, 13, 56, 0.72);
+		border: 1px solid rgba(76, 11, 56, 0.4);
+		border-radius: 14px;
+
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+
+		font-family: "Manrope", sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: 0.03em;
+		color: rgba(245, 230, 250, 0.95);
+
+		cursor: pointer;
+
+		box-shadow:
+			0 8px 24px rgba(0, 0, 0, 0.18),
+			10px 20px 18px rgba(196, 119, 173, 0.08);
+
+		transition:
+			border-color 0.3s ease,
+			box-shadow 0.3s ease,
+			background-color 0.3s ease;
+
+		&:hover {
+			border-color: rgba(225, 190, 255, 0.75);
+
+			box-shadow:
+				0 0 18px rgba(196, 119, 173, 0.18),
+				0 8px 24px rgba(0, 0, 0, 0.2);
+
+			background-color: rgba(48, 25, 58, 0.85);
+		}
+
+		&:active {
+			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+		}
+	}
+}

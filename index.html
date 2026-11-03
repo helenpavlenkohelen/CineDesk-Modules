@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>CineDesk</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<div class="alert">The movie has been added to saved items.</div>
+		<div class="error-message"></div>
+		<header class="header">
+			<nav class="header__nav">
+				<a href="/" class="header__logo">CINEDESK</a>
+				<input
+					type="search"
+					class="header__search"
+					placeholder="Search movie..."
+				/>
+
+				<button
+					type="button"
+					class="header__favorite"
+					aria-label="Favorites"
+				>
+					♡
+				</button>
+			</nav>
+		</header>
+		<main>
+			<section class="hero">
+				<h1 class="hero__title">Find Your Movie</h1>
+				<p class="hero__subtitle">Your personal movie library</p>
+
+				<div class="sort-select">
+					<select id="sort-movies" class="sort-select__control">
+						<option value="default">Sort by: Default</option>
+						<option value="asc">Sort by: Year ↑</option>
+						<option value="desc">Sort by: Year ↓</option>
+					</select>
+				</div>
+			</section>
+
+			<section class="movies"></section>
+		</main>
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>

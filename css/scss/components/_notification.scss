@@ -1,0 +1,14 @@
+.alert {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	background: $pink;
+	color: $bg-dark;
+	border-radius: 3px;
+	z-index: 5;
+
+	&--visible {
+		display: block;
+	}
+}
