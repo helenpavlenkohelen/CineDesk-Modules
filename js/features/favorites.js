@@ -1,6 +1,5 @@
 export function listenSaveMovie(movies) {
 	movies.addEventListener("click", (e) => {
-		// localStorage.clear();
 		const currentElem = e.target;
 		if (!currentElem.closest(".movie-card__favorite")) {
 			return;
@@ -20,7 +19,6 @@ export function listenSaveMovie(movies) {
 				.nextElementSibling.firstElementChild.nextElementSibling
 				.textContent;
 		const imgPoster = e.target.nextElementSibling.src;
-		console.log(imgPoster);
 		const movie = {
 			title: titleMovie,
 			year: yearMovie,
@@ -31,7 +29,6 @@ export function listenSaveMovie(movies) {
 		arrayMovies.push(movie);
 		const arrayLocalStorage = JSON.stringify(arrayMovies);
 		localStorage.setItem("movies", arrayLocalStorage);
-		console.log(arrayMovies);
 		renderMoviesLocalStorage();
 
 		const alert = document.querySelector(".alert");

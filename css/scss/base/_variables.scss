@@ -1,11 +1,90 @@
-// $color-bg-dark: #21132a;
-// $color-bg-purple: #43224d;
-// $color-purple: #7b4b8f;
-// $color-pink: #c477ad;
-// $color-text-primary: #ffffff;
-
 $bg-dark: #21132a;
 $bg-purple: #43224d;
 $purple: #7b4b8f;
 $pink: #c477ad;
 $text: #ffffff;
+
+$bg-light-glow: rgba(255, 255, 255, 0.18);
+$bg-lilac-glow: rgba(225, 190, 255, 0.22);
+$bg-pink-glow: rgba(255, 180, 225, 0.18);
+$bg-purple-glow: rgba(200, 170, 255, 0.16);
+$bg-deep-purple: #26102f;
+
+$panel-bg: rgba(43, 20, 54, 0.92);
+$panel-border: rgba(225, 190, 255, 0.2);
+
+$text-white-muted: rgba(255, 255, 255, 0.9);
+$text-white-subtle: rgba(255, 255, 255, 0.08);
+
+$shadow-black-strong: rgba(0, 0, 0, 0.4);
+$shadow-black-medium: rgba(0, 0, 0, 0.2);
+$shadow-black-soft: rgba(0, 0, 0, 0.18);
+$shadow-black-light: rgba(0, 0, 0, 0.16);
+
+$shadow-pink: rgba(196, 119, 173, 0.18);
+$shadow-pink-soft: rgba(196, 119, 173, 0.08);
+$shadow-pink-medium: rgba(196, 119, 173, 0.12);
+
+$hover-pink-bg: rgba(196, 119, 173, 0.1);
+
+$button-bg: rgba(82, 25, 106, 0.72);
+$button-border: rgba(152, 53, 123, 0.4);
+$button-text: rgba(245, 230, 250, 0.95);
+$button-hover-bg: rgba(48, 25, 58, 0.85);
+
+$border-lilac-hover: rgba(225, 190, 255, 0.75);
+
+$movie-card-bg: rgba(35, 18, 43, 0.72);
+$movie-card-border: rgba(255, 255, 255, 0.16);
+$movie-card-hover-border: rgba(225, 190, 255, 0.3);
+$movie-card-shadow: rgba(0, 0, 0, 0.25);
+
+$movie-poster-bg: rgba(255, 255, 255, 0.08);
+$movie-meta-text: rgba(255, 255, 255, 0.55);
+
+$favorite-border: rgba(255, 255, 255, 0.15);
+$favorite-card-bg: rgba(22, 9, 29, 0.45);
+$favorite-card-hover-bg: rgba(196, 119, 173, 0.18);
+$favorite-bg: rgba(255, 255, 255, 0.07);
+$favorite-text-muted: rgba(255, 255, 255, 0.85);
+$favorite-hover-bg: rgba(196, 119, 173, 0.15);
+$favorite-hover-text: #ffb7df;
+$favorite-active-text: #a913a7;
+$favorite-hover-shadow: rgba(196, 119, 173, 0.3);
+
+$details-border: rgba(255, 255, 255, 0.18);
+$details-shadow: rgba(20, 10, 40, 0.25);
+$details-text: rgba(255, 255, 255, 0.88);
+$details-label: rgba(225, 190, 255, 0.95);
+$details-content-text: rgba(245, 230, 250, 0.9);
+
+$rating-bg: rgba(35, 18, 43, 0.35);
+$rating-border: rgba(196, 119, 173, 0.2);
+$rating-source: rgba(226, 211, 235, 0.85);
+$rating-value: #e5b5dc;
+
+$details-btn-bg: rgba(43, 13, 56, 0.72);
+$details-btn-border: rgba(76, 11, 56, 0.4);
+
+$sort-option-text: #ead9ef;
+$sort-option-bg: #2b1834;
+$sort-arrow: #d8b5e5;
+$sort-border: rgba(196, 119, 173, 0.4);
+
+$error-bg: rgba(33, 19, 42, 0.95);
+$error-border: rgba(196, 119, 173, 0.35);
+$error-shadow-dark: rgba(0, 0, 0, 0.65);
+$error-shadow-purple: rgba(33, 19, 42, 0.8);
+
+$logo-gradient-mid: #d8c8dc;
+$logo-gradient-end: #9b789f;
+
+$search-shadow-inset: rgba(255, 255, 255, 0.03);
+$search-hover-bg: rgba(255, 255, 255, 0.1);
+$search-focus-border: rgba(225, 190, 255, 0.45);
+$search-focus-shadow: rgba(225, 190, 255, 0.2);
+$search-focus-inset: rgba(255, 255, 255, 0.04);
+
+$hero-gradient-mid: #eadcf0;
+$hero-gradient-end: #b996bb;
+$hero-title-glow: rgba(225, 190, 255, 0.12);

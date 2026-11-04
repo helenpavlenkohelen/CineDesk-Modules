@@ -12,22 +12,22 @@
 		width: 100%;
 		padding: 13px 42px 13px 18px;
 
-		color: rgba(245, 230, 250, 0.95);
+		color: $button-text;
 		font-family: "Manrope", sans-serif;
 		font-size: 14px;
 		font-weight: 600;
 		letter-spacing: 0.02em;
 
-		background-color: rgba(35, 18, 43, 0.72);
-		border: 1px solid rgba(196, 119, 173, 0.4);
+		background-color: $movie-card-bg;
+		border: 1px solid $sort-border;
 		border-radius: 14px;
 
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
 
 		box-shadow:
-			0 8px 24px rgba(0, 0, 0, 0.18),
-			0 0 18px rgba(196, 119, 173, 0.08);
+			0 8px 24px $shadow-black-soft,
+			0 0 18px $shadow-pink-soft;
 
 		cursor: pointer;
 		outline: none;
@@ -38,15 +38,15 @@
 
 		&:hover,
 		&:focus {
-			border-color: rgba(225, 190, 255, 0.75);
+			border-color: $border-lilac-hover;
 			box-shadow:
-				0 0 18px rgba(196, 119, 173, 0.18),
-				0 8px 24px rgba(0, 0, 0, 0.2);
+				0 0 18px $shadow-pink,
+				0 8px 24px $shadow-black-medium;
 		}
 
 		option {
-			color: #ead9ef;
-			background-color: #2b1834;
+			color: $sort-option-text;
+			background-color: $sort-option-bg;
 		}
 	}
 
@@ -59,8 +59,8 @@
 		width: 8px;
 		height: 8px;
 
-		border-right: 2px solid #d8b5e5;
-		border-bottom: 2px solid #d8b5e5;
+		border-right: 2px solid $sort-arrow;
+		border-bottom: 2px solid $sort-arrow;
 
 		transform: translateY(-50%) rotate(45deg);
 		pointer-events: none;

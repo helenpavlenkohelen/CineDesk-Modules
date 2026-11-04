@@ -1,6 +1,4 @@
 export function createMovieDetails(movie) {
-	console.log(movie);
-
 	const articleCardDetails = document.createElement("article");
 	articleCardDetails.classList.add("movie-card-details");
 
@@ -110,8 +108,6 @@ export function createMovieDetails(movie) {
 			imgPoster.src = "./images/noPoster.svg";
 		};
 	}
-
-	console.log(articleCardDetails);
 
 	return articleCardDetails;
 }

@@ -36,7 +36,6 @@ export function sortMovieOfSelect(currentSort) {
 }
 
 sortSelect.addEventListener("change", () => {
-	console.log("change сработал");
 	currentSort = sortSelect.value;
 	const arrSortMovies = sortMovieOfSelect(currentSort);
 	renderMovies(arrSortMovies);

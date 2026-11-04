@@ -1,8 +1,9 @@
 import { showError } from "../ui/notification.js";
+import { API_KEY } from "../config.js";
 
 export async function getMovieDetails(idMovie) {
 	const response = await fetch(
-		`https://www.omdbapi.com/?apikey=7caf4c20&i=${idMovie}`,
+		`https://www.omdbapi.com/?apikey=${API_KEY}&s=${idMovie}`,
 	);
 
 	return await checkToError(response);
@@ -10,7 +11,7 @@ export async function getMovieDetails(idMovie) {
 
 export async function getMovies(search) {
 	const response = await fetch(
-		`https://www.omdbapi.com/?apikey=7caf4c20&s=${search}`,
+		`https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`,
 	);
 
 	return await checkToError(response);

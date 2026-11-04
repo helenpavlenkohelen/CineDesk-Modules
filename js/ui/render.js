@@ -1,6 +1,5 @@
 import { createMovieCard } from "./cards.js";
 export async function renderMovies(arrSortMovies) {
-	console.log(arrSortMovies);
 	const sectionMovies = document.querySelector(".movies");
 	sectionMovies.replaceChildren();
 	const cardMovie = arrSortMovies.map((movie) => {

@@ -12,11 +12,11 @@
 	align-items: stretch;
 
 	border-radius: 20px;
-	background: rgba(255, 255, 255, 0.08);
+	background: $text-white-subtle;
 	backdrop-filter: blur(16px);
 	-webkit-backdrop-filter: blur(16px);
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	box-shadow: 0 8px 32px rgba(20, 10, 40, 0.25);
+	border: 1px solid $details-border;
+	box-shadow: 0 8px 32px $details-shadow;
 
 	&__wrapper-poster {
 		display: grid;
@@ -49,7 +49,7 @@
 		min-height: 0;
 		padding: 8px 12px 8px 0;
 
-		color: rgba(255, 255, 255, 0.88);
+		color: $details-text;
 		font-family: "Manrope", sans-serif;
 		font-size: 15px;
 		line-height: 1.5;
@@ -69,13 +69,13 @@
 
 	&__label {
 		margin: 0;
-		color: rgba(225, 190, 255, 0.95);
+		color: $details-label;
 		font-family: "Manrope", sans-serif;
 		font-size: 13px;
 		font-weight: 700;
 		line-height: 1.4;
 		letter-spacing: 0.06em;
-		text-shadow: 0 0 12px rgba(196, 119, 173, 0.12);
+		text-shadow: 0 0 12px $details-label-glow;
 	}
 
 	&__director,
@@ -84,7 +84,7 @@
 	&__country,
 	&__genre {
 		margin: 0;
-		color: rgba(245, 230, 250, 0.9);
+		color: $details-content-text;
 		font-size: 14px;
 		line-height: 1.6;
 	}
@@ -111,14 +111,14 @@
 		min-width: 0;
 		padding: 9px 12px;
 
-		background: rgba(35, 18, 43, 0.35);
-		border: 1px solid rgba(196, 119, 173, 0.2);
+		background: $rating-bg;
+		border: 1px solid $rating-border;
 		border-radius: 10px;
 	}
 
 	&__rating-source {
 		margin: 0;
-		color: rgba(226, 211, 235, 0.85);
+		color: $rating-source;
 		font-size: 13px;
 		font-weight: 500;
 		line-height: 1.5;
@@ -126,7 +126,7 @@
 
 	&__rating-value {
 		margin: 0;
-		color: #e5b5dc;
+		color: $rating-value;
 		font-size: 14px;
 		font-weight: 700;
 		white-space: nowrap;
@@ -142,8 +142,8 @@
 		margin-top: 4px;
 		padding: 12px 16px;
 
-		background-color: rgba(43, 13, 56, 0.72);
-		border: 1px solid rgba(76, 11, 56, 0.4);
+		background-color: $details-btn-bg;
+		border: 1px solid $details-btn-border;
 		border-radius: 14px;
 
 		backdrop-filter: blur(12px);
@@ -153,13 +153,13 @@
 		font-size: 14px;
 		font-weight: 600;
 		letter-spacing: 0.03em;
-		color: rgba(245, 230, 250, 0.95);
+		color: $button-text;
 
 		cursor: pointer;
 
 		box-shadow:
-			0 8px 24px rgba(0, 0, 0, 0.18),
-			10px 20px 18px rgba(196, 119, 173, 0.08);
+			0 8px 24px $shadow-black-soft,
+			10px 20px 18px $shadow-pink-soft;
 
 		transition:
 			border-color 0.3s ease,
@@ -167,17 +167,17 @@
 			background-color 0.3s ease;
 
 		&:hover {
-			border-color: rgba(225, 190, 255, 0.75);
+			border-color: $border-lilac-hover;
 
 			box-shadow:
-				0 0 18px rgba(196, 119, 173, 0.18),
-				0 8px 24px rgba(0, 0, 0, 0.2);
+				0 0 18px $shadow-pink,
+				0 8px 24px $shadow-black-medium;
 
-			background-color: rgba(48, 25, 58, 0.85);
+			background-color: $button-hover-bg;
 		}
 
 		&:active {
-			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+			box-shadow: 0 3px 10px $shadow-black-light;
 		}
 	}
 }

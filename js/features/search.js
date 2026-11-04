@@ -5,7 +5,6 @@ import { getMovies } from "../api/api.js";
 
 export async function getSearch(value) {
 	const dataSearch = await getMovies(value);
-	console.log(dataSearch);
 	const sectionMovies = document.querySelector(".movies");
 	getDataOfsearch(dataSearch.Search);
 	const arrSortMovies = sortMovieOfSelect(currentSort);

@@ -13,16 +13,16 @@
 
 		background: linear-gradient(
 			180deg,
-			#ffffff 0%,
-			#eadcf0 55%,
-			#b996bb 100%
+			$text 0%,
+			$hero-gradient-mid 55%,
+			$hero-gradient-end 100%
 		);
 
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 
-		text-shadow: 0 0 40px rgba(225, 190, 255, 0.12);
+		text-shadow: 0 0 40px $hero-title-glow;
 	}
 
 	&__subtitle {
@@ -33,6 +33,6 @@
 		letter-spacing: 0.22em;
 		text-transform: uppercase;
 
-		color: rgba(255, 255, 255, 0.55);
+		color: $movie-meta-text;
 	}
 }

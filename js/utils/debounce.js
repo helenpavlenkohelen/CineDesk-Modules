@@ -3,7 +3,6 @@ let idx;
 const input = document.querySelector(".header__search");
 input.addEventListener("input", () => {
 	const value = input.value;
-	console.log("INPUT СРАБОТАЛ", value);
 	debounce(value);
 });
 
@@ -12,8 +11,6 @@ function debounce(value) {
 		clearTimeout(idx);
 	}
 	idx = setTimeout(() => {
-		console.log(value);
-		console.log(idx);
 		getSearch(value);
 	}, 1000);
 }
