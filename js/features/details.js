@@ -12,7 +12,13 @@ export function handleMovieCardClick() {
 		if (!mainMovie) return;
 
 		const movie = await getMovieDetails(mainMovie.dataset.movieId);
+
+		console.log("Полученные данные фильма:", movie);
+
+		if (!movie) return;
+
 		const detailsCard = createMovieDetails(movie);
+
 		const btnBack = detailsCard.querySelector(".movie-card-details__btn");
 		btnBack.addEventListener("click", () => {
 			detailsCard.replaceWith(mainMovie);

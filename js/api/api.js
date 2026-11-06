@@ -3,7 +3,7 @@ import { API_KEY } from "../config.js";
 
 export async function getMovieDetails(idMovie) {
 	const response = await fetch(
-		`https://www.omdbapi.com/?apikey=${API_KEY}&s=${idMovie}`,
+		`https://www.omdbapi.com/?apikey=${API_KEY}&i=${idMovie}`,
 	);
 
 	return await checkToError(response);
