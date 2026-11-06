@@ -13,8 +13,6 @@ export function handleMovieCardClick() {
 
 		const movie = await getMovieDetails(mainMovie.dataset.movieId);
 
-		console.log("Полученные данные фильма:", movie);
-
 		if (!movie) return;
 
 		const detailsCard = createMovieDetails(movie);
